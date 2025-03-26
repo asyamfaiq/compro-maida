@@ -12,7 +12,7 @@ import Products from "./Product";
 const HomePages = () => {
   return (
     <>
-      <Navbar />
+      <Navbar sections={['Home', 'Experience', 'Product', 'Export & Domestic', 'Founder', 'Partners']}/>
       <Hero />
       <AboutUs />
       <Milestone />

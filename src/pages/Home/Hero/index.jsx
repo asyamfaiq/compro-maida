@@ -16,22 +16,23 @@ const carouselTemplate = (data) => (
 
 const Hero = () => {
   return (
-    <div className="flex items-center gap-15 pt-25 mx-10">
-      <div className="h-full relative max-w-[40rem]">
-        <div className="bg-light-yellow absolute -top-10 left-0 rounded-2xl w-[12rem] h-[8rem]"></div>
+    <div className="flex lg:flex-row md:flex-row flex-col items-center gap-15 pt-25 lg:mx-10 md:mx-10 sm:mx-10 mx-5">
+      <div className="h-full relative lg:max-w-[40rem] md:max-w-[40rem] sm:max-w-[40rem] max-w-full lg:px-10 md:px-7 px-5">
+        <div className="bg-light-yellow absolute -top-10 left-0 rounded-lg w-[12rem] h-[8rem]"></div>
         <Carousel 
-            value={srcAssets} 
-            numVisible={1} 
-            numScroll={1} 
-            className="custom-carousel" 
-            circular 
-            autoplayInterval={4000} 
-            itemTemplate={carouselTemplate}
+          value={srcAssets} 
+          numVisible={1} 
+          numScroll={1} 
+          className="custom-carousel" 
+          circular 
+          autoplayInterval={4000} 
+          itemTemplate={carouselTemplate}
+          showNavigators={false}
         />
-        <div className="bg-light-yellow absolute -bottom-0 right-0 rounded-2xl w-[12rem] h-[8rem] -z-1"></div>
+        <div className="bg-light-yellow absolute -bottom-0 right-0 rounded-lg w-[12rem] h-[8rem] -z-1"></div>
       </div>
       <div className="flex flex-col gap-3 lg:pb-20">
-        <h1 className="text-primary text-4xl font-bold">Maida Fortuna</h1>
+        <h1 className="text-deep-blue lg:text-4xl md:text-4xl text-3xl font-bold">Maida Fortuna</h1>
         <p className="text-lg">
             Maida Fortuna Group is a company engaged in seafood processing and supplying 
             groceries based in Central Java, Indonesia. We have experience exporting frozen 

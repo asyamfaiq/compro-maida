@@ -6,7 +6,7 @@ const CardProduct = ({product}) => {
         <img src={product.assets} className='max-h-[10rem] rounded-t-2xl'/>
       </div>
       <div className='bg-primary text-white rounded-b-2xl flex items-center justify-center py-5'>
-        <h3 className='font-bold text-xl'>{product.name}</h3>
+        <h3 className='font-bold lg:text-xl md:text-xl sm:text-lg text-base'>{product.name}</h3>
       </div>
       <div className="bg-light-yellow absolute -bottom-6 -right-5 rounded-2xl w-[8rem] h-[6rem] -z-1 hidden group-hover:block transition-all duration-200"></div>
     </div>

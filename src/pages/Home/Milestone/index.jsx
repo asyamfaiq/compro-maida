@@ -31,23 +31,23 @@ const Milestone = () => {
   });
 
   return (
-    <div className='w-full bg-blue-sky mt-20 pt-10 pb-20 px-20'>
-      <h1 className='font-bold text-deep-blue text-4xl text-right'>Milestone Company</h1>
-      <div className='flex items-center justify-between gap-20 mt-10 px-10'>
+    <div className='w-full bg-blue-sky mt-20 pt-10 pb-20 lg:px-20 md:px-15 px-5'>
+      <h1 className='font-bold text-deep-blue lg:text-4xl md:text-4xl text-3xl lg:text-right md:text-right text-center'>Milestone Company</h1>
+      <div className='flex lg:flex-row md:flex-row flex-col items-center justify-between gap-20 mt-10 lg:px-10 md:px-10 px-5'>
         <div className='w-max'>
             <Stepper data={milestone} dataActive={currentMilestone} setDataActive={setCurrentMilestone}/>
         </div>
-        <div className='w-[75%] relative transition-all duration-300'>
-            <div className="bg-primary absolute -top-10 -left-10 rounded-2xl w-[12rem] h-[8rem] z-1"></div>
-            <div className='relative bg-white rounded-xl px-5 py-5 z-2'>
-                <div className='flex items-center gap-5'>
-                    <img src={currentMilestone.img} className='max-w-[20rem] rounded-md'/>
-                    <p className='text-lg'>
+        <div className='lg:w-[75%] md:w-[85%] w-full relative transition-all duration-300'>
+            <div className="bg-primary absolute -top-10 -left-10 rounded-lg w-[12rem] h-[8rem] z-1"></div>
+            <div className='relative bg-white rounded-xl lg:px-5 md:px-5 px-3 py-5 z-2'>
+                <div className='flex lg:flex-row md:flex-row flex-col items-center gap-5'>
+                    <img src={currentMilestone.img} className='max-w-[20rem] w-full rounded-md'/>
+                    <p className='lg:text-lg md:text-lg text-base'>
                         {currentMilestone.content}
                     </p>
                 </div>
             </div>
-            <div className="bg-light-yellow absolute -bottom-10 -right-10 rounded-2xl w-[12rem] h-[8rem]"></div>
+            <div className="bg-light-yellow absolute -bottom-10 -right-10 rounded-lg w-[12rem] h-[8rem]"></div>
         </div>
       </div>
     </div>

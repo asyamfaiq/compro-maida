@@ -35,7 +35,7 @@ const LIST_PRODUCT = [
 
 const Products = () => {
   return (
-    <div className='mt-20 mx-20'>
+    <div className='mt-20 lg:mx-20 md:mx-15 sm:mx-10 mx-5'>
       <h1 className='font-bold text-deep-blue text-4xl text-center mb-5'>Products</h1>
       <div className='grid gap-10 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1'>
         {

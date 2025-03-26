@@ -1,4 +1,5 @@
-import CardFounder from "./CardFounder"
+import { Carousel } from "primereact/carousel";
+import CardFounder from "./CardFounder";
 
 const LIST_FOUNDER = [
     {
@@ -45,19 +46,39 @@ const LIST_FOUNDER = [
     }
 ];
 const LIST_FOUNDER_REVERSE = LIST_FOUNDER.reverse(); 
+const responsiveOptions = [
+  {
+    breakpoint: '700px',
+    numVisible: 1,
+    numScroll: 1
+  }
+];
 
 const Founder = () => {
   return (
-    <div className="relative bg-blue-sky mt-30 pt-35 pb-20 px-10">
-      <div className="bg-primary absolute -top-7 left-0 rounded-md px-10 py-3">
-        <h1 className="font-bold text-white text-4xl">Founder</h1>
+    <div className="relative bg-blue-sky mt-30 lg:pt-35 md:pt-35 sm:pt-35 pt-20 pb-20 px-10">
+      <div className="bg-primary absolute -top-7 left-0 rounded-e-md lg:px-10 md:px-10 px-5 py-3">
+        <h1 className="font-bold text-white lg:text-4xl md:text-4xl text-3xl">Founder</h1>
       </div>
-      <div className="flex flex-row-reverse gap-3 pl-20">
+      <div className="lg:flex md:flex sm:flex hidden flex-row-reverse gap-3 pl-20">
         {
-            LIST_FOUNDER_REVERSE.map((founder) => <CardFounder key={founder.id} data={founder}/>)
+          LIST_FOUNDER_REVERSE.map((founder) => <CardFounder key={founder.id} data={founder} className={'w-[20rem] -ml-20'}/>)
         } 
       </div>
-      <div className="bg-light-yellow absolute -bottom-7 right-0 rounded-md w-[12rem] h-[4rem] px-10 py-3"></div>
+      <div className="lg:hidden md:hidden sm:hidden block">
+        <Carousel
+          value={LIST_FOUNDER}
+          className="custome-carousel"
+          numVisible={3}
+          circular
+          autoplayInterval={3000}
+          showNavigators={false}
+          showIndicators={false}
+          itemTemplate={(founder) => <CardFounder data={founder}/>}
+          responsiveOptions={responsiveOptions}
+        />
+      </div>
+      <div className="bg-light-yellow absolute -bottom-7 right-0 rounded-e-md w-[12rem] h-[4rem] md:px-10 px-5 py-3"></div>
     </div>
   )
 }

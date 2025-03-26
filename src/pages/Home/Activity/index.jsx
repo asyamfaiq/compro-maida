@@ -24,9 +24,9 @@ const Activity = () => {
   })
   
   return (
-    <div className='flex flex-col gap-3 mt-20 mx-20'>
-      <div className='flex justify-between items-center'>
-        <h1 className='font-bold text-4xl text-deep-blue'>What We Do?</h1>
+    <div className='flex flex-col gap-3 mt-20 lg:mx-20 md:mx-15 sm:mx-10 mx-5'>
+      <div className='flex lg:flex-row md:flex-row sm:flex-row flex-col gap-3 justify-between items-center'>
+        <h1 className='font-bold lg:text-4xl md:text-4xl text-3xl text-deep-blue'>What We Do?</h1>
         <div className='flex gap-2'>
             {
                 activityMenu.map((menu, index) => (
@@ -35,14 +35,14 @@ const Activity = () => {
             }
         </div>
       </div>
-      <div className='flex flex-col gap-5 border-1 border-gray-200 rounded-2xl shadow-lg px-10 py-5'>
+      <div className='flex flex-col gap-5 border-1 border-gray-200 rounded-2xl shadow-lg lg:px-10 md:px-10 sm:px-10 px-5 py-5 '>
         <div className='flex items-center gap-3 text-xl'>
             <FiCheckSquare className='text-primary'/>
             <h2 className='font-medium'>{activeMenu.title}</h2>
         </div>
-        <div className='flex items-center gap-10 transition-all duration-500'>
-            <img src={activeMenu.asset} alt='Maida' className='max-w-[20rem] transition-all duration-500'/>
-            <div className='transition-all duration-500 text-lg max-h-[20rem] overflow-y-auto text-ellipsis'>
+        <div className='flex lg:flex-row sm:flex-row flex-col items-center lg:gap-10 md:gap-10 gap-5 transition-all duration-500'>
+            <img src={activeMenu.asset} alt='Maida' className='max-w-[20rem] w-full transition-all duration-500'/>
+            <div className='transition-all duration-500 lg:text-lg md:text-lg text-base max-h-[20rem] overflow-y-auto text-ellipsis'>
                 <Markdown>
                     {activeMenu.content}
                 </Markdown>
