@@ -12,26 +12,26 @@ const Navbar = ({sections=[]}) => {
     if (window.innerWidth >= 770) setActiveSidebar(false);  
   }
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           setActiveSection(entry.target.id);
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.1 }
-  //   );
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
 
-  //   sections.forEach((id) => {
-  //     const section = document.getElementById(id);
-  //     if (section) observer.observe(section);
-  //   });
+    sections.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
 
-  //   return () => observer.disconnect();
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
+    return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>
@@ -41,7 +41,7 @@ const Navbar = ({sections=[]}) => {
           <div className="lg:flex md:flex hidden gap-4">
             {
               sections.map((data) => (
-                <a href={`#${data}`} key={data}><h5 className={activeSection === data ? "text-light-yellow" : ""}>{(data.charAt(0).toUpperCase()+data.slice(1)).replace("-", " ")}</h5></a>
+                <a href={`#${data}`} key={data}><h5 className={activeSection === data ? "text-light-yellow" : ""}>{(data.charAt(0).toUpperCase()+data.slice(1)).replaceAll("-", " ")}</h5></a>
               ))
             }
           </div>

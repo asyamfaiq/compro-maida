@@ -31,7 +31,7 @@ const Milestone = () => {
   });
 
   return (
-    <div className='w-full bg-blue-sky mt-20 pt-10 pb-20 lg:px-20 md:px-15 px-5'>
+    <div id='experience' className='w-full bg-blue-sky mt-20 pt-10 pb-20 lg:px-20 md:px-15 px-5'>
       <h1 className='font-bold text-deep-blue lg:text-4xl md:text-4xl text-3xl lg:text-right md:text-right text-center'>Milestone Company</h1>
       <div className='flex lg:flex-row md:flex-row flex-col items-center justify-between gap-20 mt-10 lg:px-10 md:px-10 px-5'>
         <div className='w-max'>

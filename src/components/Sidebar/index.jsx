@@ -10,13 +10,13 @@ const SidebarMain = ({visible, visibleHandler, sections, activeSection}) => {
           <div className='flex flex-col h-full'>
             <div className="flex flex-col gap-5 align-items-center justify-content-between px-3 pt-3 flex-shrink-0">
               <div className='w-full flex justify-between items-center'>
-                <img src='/edufic-logo.png' alt='Edufic' className='max-w-[10rem]'/>
+                <h2 className="font-bold text-primary text-2xl">MAIDA FORTUNA</h2>
                 <button><FaTimes className='text-secondary text-2xl border-1 rounded-full p-1' onClick={() => visibleHandler()} /></button>
               </div>
-              <div className='flex flex-col gap-2 px-3'>
+              <div className='flex flex-col gap-2 px-1'>
                 {
                   sections.map((data) => (
-                    <a href={`#${data}`} key={data} className='text-xl'><h5 className={`px-2 py-1 rounded-xl ${activeSection === data ? "text-secondary" : ""}`}>{(data.charAt(0).toUpperCase()+data.slice(1)).replace("-", " ")}</h5></a>
+                    <a href={`#${data}`} key={data} className='text-lg'><h5 className={`px-2 py-1 rounded-xl ${activeSection === data ? "text-secondary text-xl" : ""}`}>{(data.charAt(0).toUpperCase()+data.slice(1)).replace("-", " ")}</h5></a>
                   ))
                 }
               </div>

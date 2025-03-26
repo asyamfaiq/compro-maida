@@ -16,7 +16,7 @@ const carouselTemplate = (data) => (
 
 const Hero = () => {
   return (
-    <div className="flex lg:flex-row md:flex-row flex-col items-center gap-15 pt-25 lg:mx-10 md:mx-10 sm:mx-10 mx-5">
+    <div id="home" className="flex lg:flex-row md:flex-row flex-col items-center gap-15 pt-25 lg:mx-10 md:mx-10 sm:mx-10 mx-5">
       <div className="h-full relative lg:max-w-[40rem] md:max-w-[40rem] sm:max-w-[40rem] max-w-full lg:px-10 md:px-7 px-5">
         <div className="bg-light-yellow absolute -top-10 left-0 rounded-lg w-[12rem] h-[8rem]"></div>
         <Carousel 

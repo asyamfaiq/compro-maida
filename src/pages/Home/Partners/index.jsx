@@ -53,7 +53,7 @@ const settings = {
 
 const Partners = () => {
   return (
-    <div className='my-20'>
+    <div id="partners" className='my-20'>
       <h1 className='font-bold text-deep-blue md:text-4xl text-3xl text-center mb-5 mx-5'>Partners <span className='text-light-yellow'>and Networks</span></h1>
       <div className='flex flex-col lg:gap-8 md:gap-8 gap-3'>
         {

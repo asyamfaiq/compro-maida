@@ -56,7 +56,7 @@ const responsiveOptions = [
 
 const Founder = () => {
   return (
-    <div className="relative bg-blue-sky mt-30 lg:pt-35 md:pt-35 sm:pt-35 pt-20 pb-20 px-10">
+    <div id="founder" className="relative bg-blue-sky mt-30 lg:pt-35 md:pt-35 sm:pt-35 pt-20 pb-20 px-10">
       <div className="bg-primary absolute -top-7 left-0 rounded-e-md lg:px-10 md:px-10 px-5 py-3">
         <h1 className="font-bold text-white lg:text-4xl md:text-4xl text-3xl">Founder</h1>
       </div>

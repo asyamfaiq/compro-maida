@@ -46,7 +46,7 @@ const ExportAndDomestic = () => {
   });
 
   return (
-    <div className="relative flex flex-col gap-4 mt-20 lg:mx-20 md:mx-15 sm:mx-10 mx-5 lg:text-start md:text-start text-center">
+    <div id="export-&-Domestic" className="relative flex flex-col gap-4 mt-20 lg:mx-20 md:mx-15 sm:mx-10 mx-5 lg:text-start md:text-start text-center">
       <h1 className="text-deep-blue font-bold lg:text-4xl md:text-4xl text-3xl">Export and <span className="text-light-yellow">Domestic</span></h1>
       <div className="flex lg:flex-row md:flex-row sm:flex-row flex-col lg:justify-start md:justify-start justify-center gap-3">
         {
