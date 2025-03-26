@@ -16,7 +16,7 @@ const SidebarMain = ({visible, visibleHandler, sections, activeSection}) => {
               <div className='flex flex-col gap-2 px-1'>
                 {
                   sections.map((data) => (
-                    <a href={`#${data}`} key={data} className='text-lg'><h5 className={`px-2 py-1 rounded-xl ${activeSection === data ? "text-secondary text-xl" : ""}`}>{(data.charAt(0).toUpperCase()+data.slice(1)).replace("-", " ")}</h5></a>
+                    <a href={`#${data}`} key={data} className='text-lg' onClick={() => visibleHandler()}><h5 className={`px-2 py-1 rounded-xl ${activeSection === data ? "text-secondary text-xl" : ""}`}>{(data.charAt(0).toUpperCase()+data.slice(1)).replace("-", " ")}</h5></a>
                   ))
                 }
               </div>
