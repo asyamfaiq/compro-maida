@@ -5,19 +5,19 @@ const milestone = [
     {
         id: 1,
         year: 2022,
-        img: '/milestone/milestone-1.png',
+        img: `${import.meta.env.BASE_URL}milestone/milestone-1.png`,
         content: 'Maida Fortuna Group was founded on May, 2022 in Surabaya by 5 founders who have been experts in the seafood business for at least 13 years. The first export was Octopus Flower to Livorno, Italy and continued to several countries in Europe, Asia and America',
     },
     {
         id: 2,
         year: 2023,
-        img: '/milestone/milestone-2.png',
+        img: `${import.meta.env.BASE_URL}milestone/milestone-2.png`,
         content: 'Apart from the export market, the domestic market is also starting to be worked on, especially in mining. The first mining project was in the PT Hillcon which is located in Halmahera, North Maluku.',
     },
     {
         id: 3,
         year: 2024,
-        img: '/milestone/milestone-3.png',
+        img: `${import.meta.env.BASE_URL}milestone/milestone-3.png`,
         content: 'It turns out that the mining business is very promising so we need to expand into various projects without forgetting the export market which we also need to increase. In 2024 we have a request for a third mining project, namely PT Hillcon which is located in Konawe, North Sulawesi. And we also prepare adequate manufacturing facilities ourselves to support Quality, Quantity and Sustainability stability.',
     }
 ]
@@ -26,7 +26,7 @@ const Milestone = () => {
   const [ currentMilestone, setCurrentMilestone ] = useState({
     id: 1,
     year: 2022,
-    img: '/milestone/milestone-1.png',
+    img: `${import.meta.env.BASE_URL}milestone/milestone-1.png`,
     content: 'Maida Fortuna Group was founded on May, 2022 in Surabaya by 5 founders who have been experts in the seafood business for at least 13 years. The first export was Octopus Flower to Livorno, Italy and continued to several countries in Europe, Asia and America',
   });
 

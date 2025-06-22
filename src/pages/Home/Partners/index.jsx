@@ -1,38 +1,39 @@
 import Slider from "react-slick";
+const BASE = import.meta.env.BASE_URL;
 
 const LIST_PARTNERS = [
-    {
-        cluster: "Exports",
-        list: [
-            '/partners/exports/export-1.png',
-            '/partners/exports/export-2.png',
-            '/partners/exports/export-3.png',
-            '/partners/exports/export-4.png',
-            '/partners/exports/export-5.png',
-            '/partners/exports/export-6.png'
-        ]
-    },
-    {
-        cluster: "Domestics",
-        list: [
-            '/partners/domestics/domestic-1.png',
-            '/partners/domestics/domestic-2.png',
-            '/partners/domestics/domestic-3.png',
-            '/partners/domestics/domestic-4.png',
-            '/partners/domestics/domestic-5.png'
-        ]
-    },
-    {
-        cluster: "Networking",
-        list: [
-            '/partners/networking/networking-1.png',
-            '/partners/networking/networking-2.png',
-            '/partners/networking/networking-3.png',
-            '/partners/networking/networking-4.png',
-            '/partners/networking/networking-5.png',
-            '/partners/networking/networking-6.png'
-        ]
-    }
+  {
+    cluster: "Exports",
+    list: [
+      `${BASE}partners/exports/export-1.png`,
+      `${BASE}partners/exports/export-2.png`,
+      `${BASE}partners/exports/export-3.png`,
+      `${BASE}partners/exports/export-4.png`,
+      `${BASE}partners/exports/export-5.png`,
+      `${BASE}partners/exports/export-6.png`
+    ]
+  },
+  {
+    cluster: "Domestics",
+    list: [
+      `${BASE}partners/domestics/domestic-1.png`,
+      `${BASE}partners/domestics/domestic-2.png`,
+      `${BASE}partners/domestics/domestic-3.png`,
+      `${BASE}partners/domestics/domestic-4.png`,
+      `${BASE}partners/domestics/domestic-5.png`
+    ]
+  },
+  {
+    cluster: "Networking",
+    list: [
+      `${BASE}partners/networking/networking-1.png`,
+      `${BASE}partners/networking/networking-2.png`,
+      `${BASE}partners/networking/networking-3.png`,
+      `${BASE}partners/networking/networking-4.png`,
+      `${BASE}partners/networking/networking-5.png`,
+      `${BASE}partners/networking/networking-6.png`
+    ]
+  }
 ]
 
 const settings = {

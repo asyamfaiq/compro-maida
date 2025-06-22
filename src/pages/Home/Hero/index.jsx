@@ -1,12 +1,6 @@
 import { Carousel } from "primereact/carousel"
 
-const srcAssets = [
-    '/hero/hero-1.png',
-    '/hero/hero-2.png',
-    '/hero/hero-3.png',
-    '/hero/hero-4.png',
-    '/hero/hero-5.png'
-]
+const srcAssets = [1, 2, 3, 4, 5].map(n => `${import.meta.env.BASE_URL}hero/hero-${n}.png`);
 
 const carouselTemplate = (data) => (
     <div className="flex rounded-xl">

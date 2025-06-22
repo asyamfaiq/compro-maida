@@ -5,31 +5,31 @@ import Button from '../../../components/Button';
 const LIST_PRODUCT = [
     {
         name: 'FROZEN FISH SEA CAUGHT',
-        assets: '/product/fish-sea.png'
+        assets: `${import.meta.env.BASE_URL}product/fish-sea.png`
     },
     {
         name: 'FROZEN CHEPALOPODS',
-        assets: '/product/squid.png'
+        assets: `${import.meta.env.BASE_URL}product/squid.png`
     },
     {
         name: 'FROZEN FARM SHRIMP',
-        assets: '/product/shrimp.png'
+        assets: `${import.meta.env.BASE_URL}product/shrimp.png`
     },
     {
         name: 'CRAB MEAT',
-        assets: '/product/crab.png'
+        assets: `${import.meta.env.BASE_URL}product/crab.png`
     },
     {
         name: 'YELLOWFIN TUNA',
-        assets: '/product/tuna.png'
+        assets: `${import.meta.env.BASE_URL}product/tuna.png`
     },
     {
         name: 'FROZEN FISH FARM RAISED',
-        assets: '/product/catfish.png'
+        assets: `${import.meta.env.BASE_URL}product/catfish.png`
     },
     {
         name: 'DRY FISH SEA CAUGHT',
-        assets: '/product/dry-fish.png'
+        assets: `${import.meta.env.BASE_URL}product/dry-fish.png`
     }
 ];
 
