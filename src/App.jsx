@@ -1,5 +1,5 @@
 import { PrimeReactProvider } from 'primereact/api';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'primereact/resources/themes/viva-light/theme.css';
 import 'primereact/resources/primereact.css';
@@ -21,11 +21,11 @@ function App() {
   return (
     <>
       <PrimeReactProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path='/' element={<HomePages />}/>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </PrimeReactProvider>
     </>
   )
